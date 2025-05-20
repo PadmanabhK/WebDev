@@ -1,0 +1,204 @@
+.flex {
+  display: flex;
+}
+
+.fd-row {
+  flex-direction: row;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+.fd-row-rev {
+  flex-direction: row-reverse;
+}
+
+.fd-col-rev {
+  flex-direction: column-reverse;
+}
+
+/* Justify-Content */
+
+.jc-cen {
+  justify-content: center;
+}
+
+.jc-sa {
+  justify-content: space-around;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-se {
+  justify-content: space-evenly;
+}
+
+.jc-fs {
+  justify-content: flex-start;
+}
+
+.jc-fe {
+  justify-content: flex-end;
+}
+
+/* Align-items */
+
+.ai-cen {
+  align-items: center;
+}
+
+.ai-fs {
+  align-items: flex-start;
+}
+
+.ai-fe {
+  align-items: flex-end;
+}
+
+.as-fe {
+  align-self: flex-end;
+}
+.as-fs {
+  align-self: flex-start;
+}
+.as-cen {
+  align-self: center;
+}
+
+/* wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* other flex */
+.flex-1 {
+  flex-grow: 1;
+}
+
+/* pointer */
+.pointer {
+  cursor: pointer;
+}
+
+/* display */
+.removed {
+  display: none;
+}
+.shown {
+  display: block;
+}
+
+/* Position */
+.pos-stat {
+  position: static;
+}
+.pos-abs {
+  position: absolute;
+}
+.pos-rel {
+  position: relative;
+}
+
+/* Border */
+.bd-none {
+  border: none;
+}
+.bd-1px {
+  border: 1px solid black;
+}
+.out-none {
+  outline: none;
+}
+
+/* list-style-type */
+.lst-none {
+  list-style-type: none;
+}
+
+/* fonts */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* opacity and visibility */
+.op-0 {
+  opacity: 0;
+}
+.vis-hid {
+  visibility: hidden;
+}
+
+/* text */
+.ta-cen {
+  text-align: center;
+}
+.td-none {
+  text-decoration: none;
+}
+
+/* grid */
+.grid {
+  display: grid;
+}
+
+/* transparent background */
+.bg-trans {
+  background-color: transparent;
+}
+.bg-white {
+  background-color: white;
+}
+.bg-black {
+  background-color: black;
+}
+
+/* width */
+.w-100 {
+  width: 100%;
+}
+.w-auto {
+  width: auto;
+}
+.h-auto {
+  height: auto;
+}
+.h-100 {
+  height: 100%;
+}
+
+/* background-image */
+.no-rep {
+  background-repeat: no-repeat;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-cen {
+  background-position: center;
+}
+
+/* color */
+.col-white {
+  color: white;
+}
+.col-black {
+  color: black;
+}
+
+.float-right {
+  float: right;
+}
+
+/* margin center */
+.mg-cen {
+  margin: 0 auto;
+}
+
+/* text gradient */
+.tg {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
