@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlantFusion</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&family=Allerta&family=Belanosima&family=Roboto:wght@500&family=Silkscreen&family=Tilt+Neon&family=Ubuntu:wght@700&family=Ysabeau+Infant:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="utils.css" />
+  </head>
+  <body>
+    <header class="navBlock">
+      <div class="nav grid">
+        <div class="logoBox flex jc-cen ai-cen">
+          <img src="Images/logo.png" class="logo" width="170px" />
+        </div>
+        <div class="navLinks flex ai-cen">
+          <ul class="navList flex ai-cen jc-se w-100">
+            <li class="navItem lst-none flex ai-cen jc-cen">
+              <a href="#" class="td-none fw-bold">Home</a>
+            </li>
+            <li class="navItem lst-none flex ai-cen jc-cen">
+              <a href="#" class="td-none fw-bold">Categories</a>
+            </li>
+            <li class="navItem lst-none flex ai-cen jc-cen">
+              <a href="#" class="td-none fw-bold">Membership</a>
+            </li>
+            <li class="navItem lst-none flex ai-cen jc-cen">
+              <a href="#" class="td-none fw-bold">Others</a>
+            </li>
+          </ul>
+        </div>
+        <div class="others flex jc-se ai-cen">
+          <button class="lsBtn pointer flex jc-se ai-cen bd-none bg-white">
+            <i class="fa-solid fa-right-to-bracket lsBtnLogo"></i>
+            <p class="btnText fw-bold">Login</p>
+          </button>
+          <button class="lsBtn pointer flex jc-se ai-cen bd-none bg-white">
+            <i class="fa-solid fa-user-plus lsBtnLogo"></i>
+            <p class="btnText fw-bold">Sign In</p>
+          </button>
+        </div>
+      </div>
+
+      <div class="navContent grid">
+        <div class="contentBox flex fd-col jc-se">
+          <h1 class="contentBoxH1 mg-cen">
+            Welcome To <span class="spanName">PlantFusion</span>...
+          </h1>
+          <h4 class="slogan ta-cen">
+            Nature's Beauty Delivered
+            <div class="searchBox bd-none flex ai-cen mg-cen jc-cen">
+              <form class="searchForm flex jc-sb ai-cen">
+                <div class="search flex-1 flex ai-cen jc-cen">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <input
+                  type="text"
+                  class="searchInput bd-none bg-trans fw-bold out-none"
+                />
+              </form>
+              <button class="searchBtn pointer flex-1 bd-none col-white">
+                Search
+              </button>
+            </div>
+            Search
+            <span class="navOp">Houseplants, </span>
+            <span class="navOp">Flowers, </span>
+            or
+            <span class="navOp">Utilities</span>
+          </h4>
+        </div>
+        <div class="imgBox flex jc-sa ai-cen flex-wrap">
+          <img src="Images/hp1.png" class="navImg" />
+          <img src="Images/whiteFlower.jpg" class="navImg" />
+          <img src="Images/util.jpg" class="navImg" />
+        </div>
+      </div>
+    </header>
+    <div class="catBox pos-abs bg-white vis-hidden op-0"></div>
+
+    <div class="side flex fd-col ai-cen jc-cen pos-abs">
+      <div class="sideBar grid">
+        <div class="sideBarBox flex jc-cen">
+          <button class="sbBtn flex ai-cen jc-cen bd-none pointer">
+            <i class="fa-solid fa-bars burger"></i>
+          </button>
+        </div>
+
+        <ul class="options flex-1 fd-col ai-cen jc-se removed">
+          <li class="optionsItem lst-none flex ai-cen jc-cen removed">
+            <img src="Images/icons8-curly-brackets-30.png" />
+          </li>
+          <li class="optionsItem lst-none flex ai-cen jc-cen removed">
+            <img src="Images/icons8-instagram-30.png" />
+          </li>
+          <li class="optionsItem lst-none flex ai-cen jc-cen removed">
+            <img src="Images/icons8-twitter-30.png" />
+          </li>
+          <li class="optionsItem lst-none flex ai-cen jc-cen removed">
+            <img src="Images/icons8-youtube-30.png" />
+          </li>
+          <li class="optionsItem lst-none flex ai-cen jc-cen removed">
+            <img src="Images/icons8-reddit-30.png" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="themeBar grid">
+        <div class="themeBarBox flex jc-cen">
+          <button class="themeButton flex ai-cen jc-cen pointer bd-none">
+            <i class="fa-solid fa-palette themeIcon"></i>
+          </button>
+        </div>
+        <ul class="themeList flex fd-col jc-se ai-cen removed">
+          <li class="themeItem removed lst-none"></li>
+          <li class="themeItem removed lst-none"></li>
+          <li class="themeItem removed lst-none"></li>
+          <li class="themeItem removed lst-none"></li>
+          <li class="themeItem removed lst-none"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- API Section -->
+
+    <h1 class="apiHeading pos-rel ta-cen tg fw-bold">
+      Powerful API Services for Seamless Integration
+    </h1>
+    <hr class="apiUnderline" />
+
+    <div class="apiSection flex jc-cen ai-cen mg-cen">
+      <div class="apiService bg-black">
+        <video class="earth float-right w-100 h-auto" autoplay loop>
+          <source src="Videos/World.mp4" />
+        </video>
+      </div>
+    </div>
+
+    <div class="text flex fd-col jc-se ai-cen pos-abs col-white fw-bold">
+      <h1 class="apiHead">
+        <span class="checkOut">.Checkout</span> Our
+        <span class="apiBrac">&#x007B;</span><span class="apiWord tg">API</span
+        ><span class="apiBrac">&#x007D;</span>
+        Service
+      </h1>
+
+      <div class="apiItemBox flex jc-cen">
+        <ul class="apiList flex fd-col jc-se lst-none">
+          <li class="apiItem">
+            <i class="fa-regular fa-circle-check"></i> Access Extensive Plant
+            Data:
+          </li>
+          <li class="apiItem">
+            <i class="fa-regular fa-circle-check"></i> Advanced Search and
+            Filtering
+          </li>
+          <li class="apiItem">
+            <i class="fa-regular fa-circle-check"></i> Reliable and Up-to-Date
+            Information
+          </li>
+          <li class="apiItem">
+            <i class="fa-regular fa-circle-check"></i> Integration Made Easy
+          </li>
+          <li class="apiItem">
+            <i class="fa-regular fa-circle-check"></i> Developer Support and
+            Community
+          </li>
+        </ul>
+      </div>
+
+      <div class="apiBtns flex jc-se">
+        <button class="apiKey pointer bd-none fw-bold">
+          Get API Key <i class="fa-solid fa-key"></i>
+        </button>
+        <button class="apiDocs pointer bd-none fw-bold">
+          Read Docs <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Plants -->
+
+    <div class="plants no-rep bg-cover grid">
+      <div class="plantSection1 flex ai-cen jc-cen">
+        <h1 class="ps1Head ta-cen">
+          ''Transform Your Space with the Beauty of
+          <span class="ps1Sub tg">Houseplants</span>''
+        </h1>
+      </div>
+      <div class="plantSection2 flex ai-cen jc-se fd-col">
+        <div class="ps2Nav flex jc-cen w-100">
+          <ul class="ps2List flex lst-none">
+            <li class="ps2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Benefits
+            </li>
+            <li class="ps2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Terms & Cond.
+            </li>
+            <li class="ps2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Plant API
+            </li>
+          </ul>
+        </div>
+        <div class="ps2Container">
+          <!-- Benefits -->
+          <ul class="ps2ConList flex fd-col jc-se lst-none h-100">
+            <li class="ps2Item">
+              <i class="fa-solid fa-clover"></i>Enhanced Indoor Air Quality
+            </li>
+            <li class="ps2Item">
+              <i class="fa-solid fa-clover"></i>Stress Relief and Relaxation
+            </li>
+            <li class="ps2Item">
+              <i class="fa-solid fa-clover"></i>Boosted Productivity and
+              Concentration
+            </li>
+            <li class="ps2Item">
+              <i class="fa-solid fa-clover"></i>Natural Décor and Aesthetics
+            </li>
+            <li class="ps2Item">
+              <i class="fa-solid fa-clover"></i>Connection with Nature
+            </li>
+          </ul>
+
+          <!-- Terms & Conditions -->
+          <ul class="ps2TC removed flex fd-col jc-se lst-none h-100">
+            <li class="ps2TCitem">
+              <i class="fa-solid fa-shield-halved"></i>All sales of plants are
+              final.
+            </li>
+            <li class="ps2TCitem">
+              <i class="fa-solid fa-shield-halved"></i>
+              Premium quality plants: Freshness assured.
+            </li>
+            <li class="ps2TCitem">
+              <i class="fa-solid fa-shield-halved"></i>Global payment acceptance
+            </li>
+            <li class="ps2TCitem">
+              <i class="fa-solid fa-shield-halved"></i>24-hour cancellation
+              policy
+            </li>
+            <li class="ps2TCitem">
+              <i class="fa-solid fa-shield-halved"></i>Data protection priority:
+            </li>
+            <button class="TCbtn pointer as-fe bd-none col-white fw-bold">
+              Read Terms & Cons.<i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </ul>
+
+          <!-- plant API -->
+          <ul class="ps2API removed flex fd-col jc-se lst-none h-100">
+            <li class="ps2APIitem">
+              <i class="fa-solid fa-database"></i>Extensive plant data at your
+              fingertips
+            </li>
+            <li class="ps2APIitem">
+              <i class="fa-solid fa-database"></i>
+              Seamless integration with your applications
+            </li>
+            <li class="ps2APIitem">
+              <i class="fa-solid fa-database"></i>Real-time plant identification
+            </li>
+            <li class="ps2APIitem">
+              <i class="fa-solid fa-database"></i>Personalized plant
+              recommendations
+            </li>
+            <button class="apiRD pointer as-fe bd-none col-white fw-bold">
+              Get API Key <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </ul>
+        </div>
+        <button class="visitPlant pointer bd-none">
+          Shop Plants Now! <i class="fa-solid fa-basket-shopping"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- FLOWERS -->
+    <div class="flowers grid no-rep bg-cover bg-cen">
+      <div class="flowerSection1 flex fd-col jc-se ai-cen">
+        <div class="fs2Nav flex jc-cen w-100">
+          <ul class="fs2List flex lst-none">
+            <li class="fs2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Benefits
+            </li>
+            <li class="fs2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Bouquets
+            </li>
+            <li class="fs2NavItem col-white pointer flex-1 flex ai-cen jc-cen">
+              Flowers API
+            </li>
+          </ul>
+        </div>
+        <div class="fs2Container">
+          <!-- Benefits -->
+          <ul class="fs2BList flex fd-col jc-se lst-none h-100">
+            <li class="fs2BItem">
+              <i class="fa-solid fa-fan tg"></i>Fragrant Delights
+            </li>
+            <li class="fs2BItem">
+              <i class="fa-solid fa-fan tg"></i>Symbolize Love and Affection
+            </li>
+            <li class="fs2BItem">
+              <i class="fa-solid fa-fan tg"></i>Boost Energy and Vitality
+            </li>
+            <li class="fs2BItem">
+              <i class="fa-solid fa-fan tg"></i>Create Memorable Moments
+            </li>
+            <li class="fs2BItem">
+              <i class="fa-solid fa-fan tg"></i>Enhance the Aesthetic Appeal
+            </li>
+          </ul>
+          <ul class="fs2BOList flex fd-col jc-se removed lst-none h-100">
+            <li class="fs2BOItem flex ai-cen">
+              <img class="fa-bou" src="icons8-flower-100.png" alt="" />Wide
+              Variety of Bouquets
+            </li>
+            <li class="fs2BOItem flex ai-cen">
+              <img class="fa-bou" src="icons8-flower-100.png" alt="" />Fresh and
+              Fragrant Blooms
+            </li>
+            <li class="fs2BOItem flex ai-cen">
+              <img
+                class="fa-bou"
+                src="icons8-flower-100.png"
+                alt=""
+              />Customizable Floral Arrangements
+            </li>
+            <li class="fs2BOItem flex ai-cen">
+              <img class="fa-bou" src="icons8-flower-100.png" alt="" />Same-Day
+              Delivery
+            </li>
+            <li class="fs2BOItem flex ai-cen">
+              <img class="fa-bou" src="icons8-flower-100.png" alt="" />Expert
+              Floral Designers:
+            </li>
+          </ul>
+
+          <ul class="fs2API flex fd-col jc-se removed lst-none h-100">
+            <li class="fs2APItem">
+              <i class="fa-solid fa-database"></i>Access to Extensive Flower
+              Database
+            </li>
+            <li class="fs2APItem">
+              <i class="fa-solid fa-database"></i>Image Retrieval and Display
+            </li>
+            <li class="fs2APItem">
+              <i class="fa-solid fa-database"></i>Language and Localization
+              Support
+            </li>
+            <li class="fs2APItem">
+              <i class="fa-solid fa-database"></i>
+              Developer-Friendly Documentation and Support
+            </li>
+            <button class="apiRD pointer apiRD as-fe bd-none col-white fw-bold">
+              Get API Key <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </ul>
+        </div>
+        <button class="visitFlower pointer bd-none">
+          Browse Flowers & Bouquets<i class="fa-solid fa-basket-shopping"></i>
+        </button>
+      </div>
+
+      <div class="flowerSection2 flex ai-cen jc-cen">
+        <h1 class="fs2Head ta-cen">
+          Immerse Yourself in the Colorful Realm of
+          <span class="fs2SubHead tg">Blooms</span>
+        </h1>
+      </div>
+    </div>
+
+    <h1 class="brandsHeading w-100">Trusted Brands We Work With"</h1>
+
+    <div class="curvedContainer flex ai-cen jc-cen pos-rel">
+      <div class="stats flex jc-se ai-cen fd-col bd-none">
+        <div class="brandLine flex jc-cen ai-cen"></div>
+        <div class="brandLine flex jc-cen ai-cen"></div>
+        <div class="brandLine flex jc-cen ai-cen"></div>
+      </div>
+    </div>
+
+    <div class="decLines flex jc-se fd-col pos-abs bg-trans">
+      <div class="dec1"></div>
+      <div class="dec2"></div>
+      <div class="dec3"></div>
+      <div class="dec4"></div>
+    </div>
+
+    <div class="decLines2 flex jc-se fd-col pos-abs bg-trans">
+      <div class="dec1"></div>
+      <div class="dec2"></div>
+      <div class="dec3"></div>
+      <div class="dec4"></div>
+    </div>
+
+    <!-- Membership -->
+    <!-- 
+    <div class="membership grid">
+      <div class="memberHeading flex ai-cen jc-cen">
+        <h1 class="memberH1 tg">Nature's Realm of Exclusive Memberships</h1>
+      </div>
+      <div class="membershipBlock flex ai-cen jc-se">
+        <div class="mBlock grid">
+          <div class="mBlockHead flex ai-cen jc-cen">
+            <h1 class="mHead ta-cen">Seedling Serenade</h1>
+          </div>
+          <div class="mBlockDetailFree flex fd-col ai-cen jc-se">
+            <div class="price flex ai-cen jc-cen fw-bold bd-none">FREE</div>
+            <div class="details flex ai-cen jc-se bd-none">
+              <button class="active bd-none col-white">Active</button>
+            </div>
+          </div>
+          <i class="fa-solid fa-list-ul pointer"></i>
+        </div>
+        <div class="mBlock grid">
+          <div class="mBlockHead flex ai-cen jc-cen">
+            <h1 class="mHead ta-cen">Blossom Enchantment</h1>
+          </div>
+          <div class="mBlockDetail flex fd-col ai-cen jc-se">
+            <div class="price flex ai-cen jc-cen fw-bold bd-none">$2.99</div>
+            <button class="purchase pointer">Activate Now!</button>
+          </div>
+          <i class="fa-solid fa-list-ul pointer"></i>
+        </div>
+        <div class="mBlock grid">
+          <div class="mBlockHead flex ai-cen jc-cen">
+            <h1 class="mHead ta-cen">Evergreen Elevation</h1>
+          </div>
+          <div class="mBlockDetail flex fd-col ai-cen jc-se">
+            <div class="price flex ai-cen jc-cen fw-bold bd-none">$9.99</div>
+            <button class="purchase pointer">Activate Now!</button>
+          </div>
+          <i class="fa-solid fa-list-ul pointer"></i>
+        </div>
+
+        <div
+          class="mBlockFeatures flex fd-col ai-cen jc-se bd-none pos-abs vis-hidden op-0"
+        >
+          <div class="featuresHead flex ai-cen jc-cen">
+            <h1 class="featuresHeading flex ai-cen jc-cen bd-none"></h1>
+          </div>
+          <div class="featuresBlock">
+            <ul class="featuresList flex fd-col jc-se ai-fs lst-none">
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+              <li class="feature">
+                <i class="fa-solid fa-circle featureDot"></i>
+              </li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-arrow-left pointer col-white pos-abs"></i>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer col-white grid">
+      <div class="footerBody flex ai-cen jc-se">
+        <div class="footerSocials">
+          <div class="Socials flex ai-cen jc-cen"><p>Connect With Us</p></div>
+          <ul class="SocialLinks lst-none flex fd-col ai-cen jc-se">
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-brands fa-instagram"></i>
+              instagram
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-brands fa-youtube"></i>
+              YouTube
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-brands fa-twitter"></i>
+              Twitter
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-brands fa-facebook"></i>
+              Facebook
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-brands fa-reddit-alien"></i>
+              Reddit
+            </li>
+          </ul>
+        </div>
+        <div class="footerNav">
+          <div class="Navs flex ai-cen jc-cen"><p>Explore</p></div>
+          <ul class="footerNavLinks lst-none flex fd-col ai-cen jc-se">
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-magnifying-glass"></i>Search
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-server"></i> API
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-seedling"></i>Plants
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-tag"></i> Membership
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-hashtag"></i> Brands
+            </li>
+          </ul>
+        </div>
+        <div class="footerOthers">
+          <div class="footerOther flex ai-cen jc-cen"><p>Important</p></div>
+          <ul
+            class="otherLinks lst-none flex fd-col ai-cen jc-se"
+            style="height: 170px"
+          >
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-shield"></i>Privacy Policy
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-regular fa-file"></i> Terms & Conditions
+            </li>
+            <!-- <li class="sLink flex ai-cen col-white pointer w-100"></li> -->
+            <!-- <li class="sLink flex ai-cen col-white pointer w-100"></li> -->
+            <!-- <li class="sLink flex ai-cen col-white pointer w-100"></li> -->
+          </ul>
+        </div>
+
+        <div class="footerHelps">
+          <div class="footerHelp flex ai-cen jc-cen"><p>Others...</p></div>
+          <ul class="HelpLinks lst-none flex fd-col ai-cen jc-se">
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-headphones"></i> Customer Care
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-phone"></i> Contact Us
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-star"></i> Add A Review
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-code-branch"></i> Contribute
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-link"></i> CDN
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-regular fa-bell"></i> Keep Notified
+            </li>
+            <li class="sLink flex ai-cen col-white pointer w-100">
+              <i class="fa-solid fa-truck-fast"></i>
+              Shipping & Delivery
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyRight flex ai-cen jc-se fw-bold bg-white">
+        <img src="Images/logo.png" width="170px" />
+        <div class="copyRightText ta-cen">
+          © 2023 PlantFusion. All rights reserved. Unauthorized reproduction or
+          distribution of this content is prohibited.
+        </div>
+        <div class="heart flex fd-col ai-cen jc-se">
+          <p class="heartText">Made With</p>
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
