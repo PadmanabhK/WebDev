@@ -1,0 +1,6 @@
+1) Create a basic website of KittyCattyKat
+2) Make it for ecom + entertainment 
+3) Sell cat feeder, kibbles, toys and all that.
+4) Create a separate section for APIs - info like breed, moods, uniqueness and all that
+5) Build a separate section for entertainment - where users can post their memes, cat pictures, share advice and all that
+6) create a smol cat game?
