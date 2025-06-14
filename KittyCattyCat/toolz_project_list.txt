@@ -1,0 +1,68 @@
+
+TOOLZ Web Dev Learning Journey 🚀 (HTML + CSS + JS)
+
+Task 1: Hello World 🌍
+- Create a basic HTML page with "Hello, World!" text.
+- Learn: HTML structure, `<head>`, `<body>`, `<h1>`, `<p>`.
+
+Task 2: Personal Bio Page 😎
+- Add CSS styling to a personal bio webpage.
+- Learn: Inline vs internal vs external CSS, fonts, colors, margins, padding.
+
+Task 3: Button Clicker 🔘
+- Add a button that changes text on click using JS.
+- Learn: DOM selection, `onclick` events, basic JS functions.
+
+Task 4: Dark Mode Toggle 🌙☀️
+- Add a toggle switch to enable dark mode.
+- Learn: JS class toggling, CSS variables or class-based styling.
+
+Task 5: Word Counter Tool 📝
+- Build a textarea that counts words/characters live.
+- Learn: `input` events, string manipulation, real-time UI update.
+
+Task 6: Calculator App ➕➖
+- Create a simple calculator (add, subtract, multiply, divide).
+- Learn: JS math functions, button event mapping.
+
+Task 7: Random Quote Generator 💬
+- Show a random quote from a JS array on button click.
+- Learn: Arrays, `Math.random()`, DOM updates.
+
+Task 8: Accordion / FAQ Section 🔽
+- Build a collapsible FAQ section.
+- Learn: CSS transitions, JS toggling classes, UI interactivity.
+
+Task 9: Image Slider / Carousel 🖼️
+- Make an image slideshow with left/right buttons.
+- Learn: `setInterval`, JS logic, image DOM manipulation.
+
+Task 10: Form Validation ✍️❌
+- Create a registration form with client-side validation.
+- Learn: RegEx, input checking, error messages.
+
+Task 11: Ceasar Cipher Encryptor 🔐
+- Encrypt text with Caesar cipher (shift-based).
+- Learn: String iteration, character codes, modular arithmetic.
+
+Task 12: Todo List App ✅
+- Build a todo list with add/remove/complete functionality.
+- Learn: Arrays, dynamic DOM creation, event delegation.
+
+Task 13: Fibonacci Generator 🧮
+- Input a number and generate Fibonacci series.
+- Learn: Loops, conditionals, math logic.
+
+Task 14: API Quote Fetcher with Axios 🌐
+- Fetch quotes from a public API using Axios.
+- Learn: HTTP GET, promises, async/await.
+
+Task 15: Weather App with API ☁️☀️
+- Get weather by city using a weather API.
+- Learn: API requests, JSON parsing, UI rendering.
+
+Task 16: Final Project: TOOLZ Suite 💼🛠️
+- Combine multiple tools: word counter, cipher, Fibonacci, API fetchers.
+- Learn: Project structure, JS modules, CSS layout, code reusability.
+
+Each task will level up your HTML, CSS, and JS game 🎯🔥 Keep hustlin’, bro!
